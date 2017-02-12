@@ -7,7 +7,7 @@
     "author": "Durul Dalkanat <adurul17@hotmail.com> (https://github.com/durul)",
     "license": "MIT",
     "engines": {
-        "brackets": ">=0.24.0"
+        "brackets": ">=1.0.0"
     },
     "theme": {
         "file": "theme.less",

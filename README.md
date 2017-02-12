@@ -1,15 +1,27 @@
 #WWDC 2016 Theme
+WWDC Theme is for [Brackets](http://brackets.io/).
 
 A color scheme for Xcode based on the WWDC 2016 invitation. Enjoy!
 
 ###Installation
-This extension requires Brackets Release 1.8 or newer.
 
-- Open Brackets
-- Open the Extension Manager
-- Switch to "Themes" tab
-- Search for "WWDC Theme"
-- Click "Install"
+
+### Version
+1.0.0
+
+### Installation
+ - Method One
+  - Open Brackets
+  - Open the Extension Manager
+  - Switch to "Themes" tab
+  - Search for "WWDC Theme"
+  - Click "Install"
+
+ - Method Two
+  - Clone the theme to your *Extension Folder*
+  - ```sh
+    $ git clone https://github.com/durul/wwdc-theme.git
+    ```
 
 ## Asset Credits
 Portfolio: http://durul.github.io
@@ -37,4 +49,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 - Like wwdc theme? Get us a coffee ;-)
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://paypal.me/DurulDalkanat)
-
