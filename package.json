@@ -1,0 +1,18 @@
+{
+    "name": "wwdc-2016-theme",
+    "title": "WWDC 2016 Theme",
+    "description": "Apple WWDC 2016 Invitation Syntax Theme",
+    "homepage": "https://github.com/ChynoDeluxe/dark-deluxe-theme",
+    "version": "1.0.0",
+    "author": "Durul Dalkanat <chynodeluxe@gmail.com> (https://github.com/wwdc-theme/)",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.24.0"
+    },
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["WWDC 2016", "WWDC", "theme", "flat", "dark", "highlighting", "syntax"]
+}

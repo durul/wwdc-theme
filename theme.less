@@ -1,0 +1,239 @@
+// COLOR PALETTE
+@background: #292c36;
+@foreground: #4670d8;
+/* BLUES */
+
+@blue-green: #00aba5;
+@mint-green: #95c76f;
+@green: #52bd58;
+@forest-green: #64878f;
+/* GREENS */
+
+@orange1: #d28e5d;
+/* Orange */
+
+@blue: #4670d8;
+/* Blue */
+
+@red: #bb383a;
+@cyan: #00aba4;
+@purple: #b73999;
+/* ACCENTS */
+
+@violate: #BF1B41;
+/*
+
+********************************************
+********************************************
+
+*/
+
+// STYLING
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @purple;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: @green;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: @red;
+    }
+}
+
+.cm-atom,
+.cm-string,
+.cm-string-2,
+.cm-hr {
+    color: @cyan;
+}
+
+.cm-attribute,
+.cm-plus {
+    color: @cyan;
+}
+
+.cm-number {
+    color: @violate;
+}
+
+.cm-def,
+.cm-property {
+    color: @cyan;
+}
+
+.cm-variable,
+.cm-operator,
+.cm-meta,
+.cm-bracket {
+    color: @cyan;
+}
+
+.cm-variable-2 {
+    color: @purple;
+}
+
+.cm-variable-3 {
+    color: @violate;
+}
+
+// VARIABLE COLORS FOR PHP
+.cm-m-clike.cm-variable {
+    color: @purple;
+}
+
+.cm-m-clike.cm-variable-2 {
+    color: @cyan;
+}
+
+.cm-m-clike.cm-operator {
+    color: @cyan;
+}
+
+.cm-comment {
+    color: @red;
+}
+
+.cm-error,
+.cm-minus {
+    color: @violate;
+}
+
+.cm-header {
+    color: #d85896;
+}
+
+.cm-link {
+    color: #b77fdb;
+    text-decoration: none;
+}
+
+.cm-rangeinfo {
+    color: #6c71c4;
+}
+
+.cm-keyword,
+.cm-qualifier,
+.cm-builtin,
+.cm-tag,
+.cm-quote {
+    color: @orange1;
+}
+
+// EXTRA CSS
+.CodeMirror-searching {
+    background-color: @blue;
+    &.searching-current-match {
+        background-color: @orange1;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #fff !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: @red;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: @dark-green;
+}
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+    background-color: transparent;
+    border-bottom: 2px solid @violate;
+}
+
+.CodeMirror-matchingbracket {
+    color: @orange1!important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #fff;
+}
+
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: @red;
+    }
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: @green;
+    }
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(0, 0, 0, 0.2);
+            color: @purple;
+        }
+    }
+}
+
+.CodeMirror-foldgutter-open:after {
+    color: @red;
+}
+
+.CodeMirror-foldgutter-folded:after {
+    color: @forest-green;
+}
+
+.CodeMirror.over-gutter,
+.CodeMirror-activeline {
+    .CodeMirror-foldgutter-open:after {
+        color: @red;
+    }
+}
+
+.CodeMirror-foldmarker {
+    border-color: @foreground;
+    color: @cyan;
+    background-color: @background;
+    padding: 0 5px;
+}
+
+// NON-EDITOR STYLING
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @cyan;
+}
+
+.quick-view-highlight {
+    background: @dark-green;
+}
