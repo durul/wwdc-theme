@@ -4,7 +4,7 @@
     "description": "Apple WWDC 2016 Invitation Syntax Theme",
     "homepage": "https://github.com/ChynoDeluxe/dark-deluxe-theme",
     "version": "1.0.0",
-    "author": "Durul Dalkanat <chynodeluxe@gmail.com> (https://github.com/wwdc-theme/)",
+    "author": "Durul Dalkanat <adurul17@hotmail.com> (https://github.com/durul/wwdc-theme)",
     "license": "MIT",
     "engines": {
         "brackets": ">=0.24.0"
