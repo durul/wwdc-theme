@@ -3,9 +3,6 @@ WWDC Theme is for [Brackets](http://brackets.io/).
 
 A color scheme for Xcode based on the WWDC 2016 invitation. Enjoy!
 
-###Installation
-
-
 ### Version
 1.0.0
 
