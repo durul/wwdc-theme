@@ -20,15 +20,15 @@ A color scheme for Xcode based on the WWDC 2016 invitation. Enjoy!
     $ git clone https://github.com/durul/wwdc-theme.git
     ```
 
-## Asset Credits
+### Asset Credits
 Portfolio: http://durul.github.io
 
 
-## Support
+### Support
 Twitter: https://www.twitter.com/duruldalkanat
 
 
-## License
+### License
 
 The MIT License (MIT)
 
@@ -41,7 +41,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-## Contribution
+### Contribution
 - If you'd like to contribute please submit a pull request via GitHub.
 - Like wwdc theme? Get us a coffee ;-)
 
