@@ -1,10 +1,10 @@
 {
-    "name": "wwdc-theme",
     "title": "WWDC 2016 Theme",
+    "name": "wwdc-theme",
     "description": "Apple WWDC 2016 Invitation Syntax Theme",
     "homepage": "https://github.com/durul/wwdc-theme",
-    "version": "1.0.5",
-    "author": "Durul Dalkanat <adurul17@hotmail.com> (https://github.com/durul)",
+    "version": "1.1.0",
+    "author": "Durul Dalkanat <adurul17@hotmail.com>",
     "license": "MIT",
     "engines": {
         "brackets": ">=1.1.0"
@@ -14,5 +14,14 @@
         "dark": true,
         "addModeClass": true
     },
-    "keywords": ["WWDC 2016", "WWDC", "theme", "dark", "highlighting", "syntax"]
+    "keywords": ["WWDC 2016", 
+                 "WWDC", 
+                 "theme", 
+                 "dark", 
+                 "highlighting", 
+                 "syntax"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/durul/wwdc-theme.git"
+    }
 }

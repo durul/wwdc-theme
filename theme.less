@@ -5,243 +5,122 @@
  *
  */
 
-// COLOR PALETTE
-@background: #292c36;
-@foreground: #4670d8;
-
-@blue-green: #00aba5;
-@mint-green: #95c76f;
-@green: #52bd58;
-@forest-green: #64878f;
-/* GREENS */
-
-@orange1: #d28e5d;
-/* Orange */
-
-@blue: #4670d8;
-/* Blue */
-
-@red: #bb383a;
-@cyan: #00aba4;
-@purple: #b73999;
-/* ACCENTS */
-
-@violate: #BF1B41;
-/*
-
-********************************************
-********************************************
-
-*/
-
-// STYLING
-.CodeMirror,
-.CodeMirror-scroll {
-    background-color: @background;
-    color: @foreground;
-}
-
-.CodeMirror-focused .CodeMirror-activeline-background {
-    background: @green;
-}
-
-.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
-    box-shadow: inset 15px 0 0 0 #000;
-}
-
-.CodeMirror-focused .CodeMirror-activeline {
-    .CodeMirror-gutter-elt {
-        background: rgba(0, 0, 0, 0.2);
-        color: #fff;
-    }
-    .inline-widget .CodeMirror-gutter-elt {
-        color: @red;
-    }
-}
-
-.cm-atom,
-.cm-string,
-.cm-string-2,
-.cm-hr {
-    color: @cyan;
-}
-
-.cm-attribute,
-.cm-plus {
-    color: @cyan;
-}
-
-.cm-number {
-    color: @violate;
-}
-
-.cm-def,
-.cm-property {
-    color: @cyan;
-}
-
-.cm-variable,
-.cm-operator,
-.cm-meta,
-.cm-bracket {
-    color: @cyan;
-}
-
-.cm-variable-2 {
-    color: @purple;
-}
-
-.cm-variable-3 {
-    color: @violate;
-}
-
-// VARIABLE COLORS FOR PHP
-.cm-m-clike.cm-variable {
-    color: @purple;
-}
-
-.cm-m-clike.cm-variable-2 {
-    color: @cyan;
-}
-
-.cm-m-clike.cm-operator {
-    color: @cyan;
-}
-
-.cm-comment {
-    color: @mint-green;
-}
-
-.cm-error { 
-    color: @red; 
-}
-.cm-minus {
-    color: @violate;
-}
-
-.cm-header {
-    color: #d85896;
-}
-
-.cm-link {
-    color: #b77fdb;
-    text-decoration: none;
-}
-
-.cm-rangeinfo {
-    color: #6c71c4;
-}
-
-.cm-keyword,
-.cm-qualifier,
-.cm-builtin,
-.cm-tag,
-.cm-quote {
-    color: @orange1;
-}
-
-// EXTRA CSS
-.CodeMirror-searching {
-    background-color: @blue;
-    &.searching-current-match {
-        background-color: @orange1;
-    }
-}
-
-.CodeMirror-cursor {
-    border-left: 1px solid #fff !important;
-}
-
-.CodeMirror-gutters {
-    background-color: @background;
-    border-right: none;
-}
-
-.CodeMirror-linenumber {
-    color: @red;
-}
-
-.CodeMirror .CodeMirror-selected {
-    background: #333f48;
-}
-
-.CodeMirror-focused .CodeMirror-selected {
-    background: @dark-green;
-}
-
-.CodeMirror-matchingbracket,
-.CodeMirror-matchingtag {
-    background-color: transparent;
-    border-bottom: 2px solid @violate;
-}
-
-.CodeMirror-matchingbracket {
-    color: @orange1!important;
-}
-
-.CodeMirror-overwrite .CodeMirror-cursor {
-    border-left: none !important;
-    border-bottom: 1px solid #fff;
-}
+/* Overall Colors */
+    @background: #292c36;
+    @brightgreen: #7BD827;
+    @comment: #64878f;
+    @blue: #4670d8;
+    @rb-lightblue: #00aba5;
+    @green: #52bd58;
+    @rb-orange: #d28e5d;
+    @rb-red: #bb383a;
+    @mint-green: #95c76f;
+    @violate: #BF1B41;
+    @cyan: #00aba4;
+    @purple: #b73999;
 
 .CodeMirror {
-    .CodeMirror {
-        background: transparent;
+    .CodeMirror-scroll {
+        background-color: @background;
+        color: @violate;
     }
-    .CodeMirror .CodeMirror-gutters {
-        background: transparent;
-        border-right: none;
+    .CodeMirror-selected {
+        background: lighten(@background, 20%);
     }
-    .CodeMirror .CodeMirror-activeline-background {
-        background: transparent;
+    .CodeMirror-gutters {
+        background: lighten(@background, 13%);
+        border-right: 7px solid @blue;
     }
-    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
-        background: transparent;
-        color: @red;
+    .CodeMirror-linenumber {
+        color: @violate;
     }
-    .CodeMirror-focused .CodeMirror-activeline-background {
-        background: @green;
+    .CodeMirror-cursor {
+        border-left: 1px solid @violate !important;
     }
-    .CodeMirror-focused .CodeMirror-activeline {
-        .CodeMirror-gutter-elt {
-            background: rgba(0, 0, 0, 0.2);
-            color: @purple;
-        }
+    .CodeMirror-matchingbracket {
+        color: @green !important;
+        background-color: transparent;
     }
-}
-
-.CodeMirror-foldgutter-open:after {
-    color: @red;
-}
-
-.CodeMirror-foldgutter-folded:after {
-    color: @forest-green;
-}
-
-.CodeMirror.over-gutter,
-.CodeMirror-activeline {
-    .CodeMirror-foldgutter-open:after {
-        color: @red;
+    .CodeMirror-activeline-background {
+        background: lighten(@background, 5%);
+    }
+    .CodeMirror-searching {
+        background-color: fade(@rb-orange, 90%);
+        border: 1px dashed white;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+        color: @violate !important;
     }
 }
-
-.CodeMirror-foldmarker {
-    border-color: @foreground;
-    color: @cyan;
-    background-color: @background;
-    padding: 0 5px;
+.CodeMirror-searching.searching-current-match {
+    background-color: @rb-red;
 }
-
-// NON-EDITOR STYLING
-.image-view,
+.cm-comment {
+    color: @comment;
+}
+.cm-number {
+    color: @rb-lightblue;
+}
+.cm-string {
+    color: @rb-orange;
+}
+.cm-string.cm-property {
+    color: @violate;
+}
+.cm-error {
+    color: @rb-red !important;
+}
+.cm-meta,.cm-keyword,.cm-bracket {
+    color: @green;
+}
+.cm-atom,.cm-link {
+    color: @mint-green;
+}
+.cm-attribute,.cm-property {
+    color: #66d9ef;
+}
+.cm-variable,.cm-variable-3,.cm-qualifier,.cm-def,.cm-operator {
+    color: @violate;
+}
+.cm-variable-2,.cm-tag {
+    color: @brightgreen;
+}
+.cm-builtin,.cm-special {
+    color: #ff9d00;
+}
+.CodeMirror-matchingtag {
+    color: @violate;
+    background: rgba(255, 255, 255, 0.2);
+}
+.CodeMirror-overwrite {
+    .CodeMirror-cursor {
+        border-left: none !important;
+        border-bottom: 1px solid @rb-red;
+    }
+}
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(255, 255, 255, 0.2);
+        color: @violate;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: @brightgreen;
+    }
+}
+/* Non-editor styling */
 .not-editor {
-    background-color: @background;
+    background-color: @background !important;
+    background-image: url('images/no_content_bg.svg') !important;
+    transition: background-color .3s ease-out;
 }
-
-.view-pane .image-view {
-    color: @cyan;
+.image-view {
+    background-color: @background !important;
+    background-image: none !important;
 }
-
-.quick-view-highlight {
-    background: @dark-green;
+/* Plugin Custom Styling */
+/* Spell Check https://github.com/couzteau/SpellCheck */
+span.underline,
+span.SpellCheckUnderline
+{
+    border-bottom: dotted 1px white;
+    background-color: @green;
 }
