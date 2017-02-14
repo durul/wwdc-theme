@@ -38,7 +38,7 @@
 .CodeMirror,
 .CodeMirror-scroll {
     background-color: @background;
-    color: @purple;
+    color: @foreground;
 }
 
 .CodeMirror-focused .CodeMirror-activeline-background {
@@ -109,10 +109,12 @@
 }
 
 .cm-comment {
-    color: @red;
+    color: @mint-green;
 }
 
-.cm-error,
+.cm-error { 
+    color: @red; 
+}
 .cm-minus {
     color: @violate;
 }
